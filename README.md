@@ -63,15 +63,13 @@ mvn -q test
     ```
 
 ## Architecture & patterns (high level)
-        - ** Three-tier: ** CLI (presentation) → Services (business logic) → DAOs (persistence)
-
-        - ** Patterns: ** DAO, Service/Façade, GRASP Controller; SRP, DIP, OCP in practice (see report).
-
-        - ** Testing: ** JUnit + Mockito; **Testcontainers** spins MySQL for RentalDAOIntegrationTest (Docker required).
+   - **Three-tier:** CLI (presentation) → Services (business logic) → DAOs (persistence)
+   - **Patterns:** DAO, Service/Façade, GRASP Controller; SRP, DIP, OCP in practice (see report).
+   - **Testing:** JUnit + Mockito; **Testcontainers** spins MySQL for RentalDAOIntegrationTest (Docker required).
 
 ## Screens & diagrams
-    - ERD / Class / Sequence / Collaboration diagrams → docs/figures/*.png
-    - Manual tests: docs/figures/MT1..MT5 screenshots (registration, booking, overlap rejection, payment, notifications)    
+ - ERD / Class / Sequence / Collaboration diagrams → docs/figures/*.png
+ - Manual tests: docs/figures/MT1..MT5 screenshots (registration, booking, overlap rejection, payment, notifications)    
 
 ## Repo map
 ```bash
@@ -93,13 +91,11 @@ pom.xml
 ```
 
 ## Notes & roadmap
+- **Config:** consolidate DB config via DatabaseConnection (remove duplicate URL/user/pass in DAOs).
+- **Security:** move passwords to env or application.properties; hash user passwords.
+- **Packaging:** add maven-shade-plugin or exec-maven-plugin for one-command run.
+- **Logging:** add slf4j + logback (replace System.out).
+- **CI:** add GitHub Actions “Maven” workflow; optionally enable services for Testcontainers.
 
-    - ** Config: ** consolidate DB config via DatabaseConnection (remove duplicate URL/user/pass in DAOs).
+## License / Citation
 
-    - ** Security: ** move passwords to env or application.properties; hash user passwords.
-
-    - ** Packaging: ** add maven-shade-plugin or exec-maven-plugin for one-command run.
-
-    - ** Logging: ** add slf4j + logback (replace System.out).
-
-    - ** CI: ** add GitHub Actions “Maven” workflow; optionally enable services for Testcontainers.
