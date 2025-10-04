@@ -75,8 +75,8 @@ B) Uber-jar (if you add shade plugin):
    - **Testing:** JUnit + Mockito; **Testcontainers** spins MySQL for RentalDAOIntegrationTest (Docker required).
 
 ## Screens & diagrams
- - ERD / Class / Sequence / Collaboration diagrams → docs/figures/*.png
- - Manual tests: docs/figures/MT1..MT5 screenshots (registration, booking, overlap rejection, payment, notifications)    
+ - **ERD / Class / Sequence / Collaboration diagrams** → docs/figures/*.png
+ - **Manual tests:** docs/figures/MT1..MT5 screenshots (registration, booking, overlap rejection, payment, notifications)    
 
 ## Repo map
 ```bash
