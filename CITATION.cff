@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it."
+title: "Vehicle Rental System (Java, MySQL, CLI)"
+authors:
+  - family-names: "Iliev"
+    given-names: "Bogomil"
+repository-code: "https://github.com/USER/vehicle-rental-system-java"
+url: "https://github.com/USER/vehicle-rental-system-java"
+abstract: "Layered CLI app with DAO/Service architecture, RBAC, conflict-free booking, JDBC/MySQL, unit & Testcontainers integration tests."
+keywords: ["java", "maven", "mysql", "jdbc", "cli", "dao", "design-patterns", "rbac", "testcontainers"]
+license: "MIT"
+version: "1.0.0"
+date-released: "2025-10-01"
+preferred-citation:
+  type: report
+  title: "Designing and Crafting a Layered Vehicle Rental System Through Object-Oriented Programming and Design Patterns."
+  authors:
+    - family-names: "Iliev"
+      given-names: "Bogomil"
+  year: 2025
+  institution: "University of Greater Manchester (Bolton)"
+  url: "https://github.com/USER/vehicle-rental-system-java/blob/main/docs/ain7302_report.pdf"
