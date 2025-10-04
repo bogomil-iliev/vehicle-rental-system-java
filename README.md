@@ -44,23 +44,27 @@ mvn -q test
 
 ### 3) Run the CLI
 
-**Simplest (IDE): run com.vehiclerental.Main.**
+**Simplest (IDE):** run com.vehiclerental.Main.
 **From CLI (two options):**
+ 
  A) Exec plugin (if you add it):
+ 
   ```bash
     mvn -q exec:java -Dexec.mainClass="com.vehiclerental.Main"
   ```
 
 B) Uber-jar (if you add shade plugin):
+  
   ```bash
     mvn -q -DskipTests package
     java -jar target/vehiclerentalapp-1.0-SNAPSHOT-shaded.jar
   ```
 
-    If you don’t add an exec/shade plugin yet, you can also run:
-    ```bash
+ If you don’t add an exec/shade plugin yet, you can also run:
+   
+   ```bash
     mvn -q compile && java -cp target/classes com.vehiclerental.Main
-    ```
+   ```
 
 ## Architecture & patterns (high level)
    - **Three-tier:** CLI (presentation) → Services (business logic) → DAOs (persistence)
