@@ -62,18 +62,18 @@ mvn -q test
     mvn -q compile && java -cp target/classes com.vehiclerental.Main
     ```
 
-**Architecture & patterns (high level)**
-        - **Three-tier:** CLI (presentation) → Services (business logic) → DAOs (persistence)
+## Architecture & patterns (high level)
+        - ** Three-tier: ** CLI (presentation) → Services (business logic) → DAOs (persistence)
 
-        - **Patterns:** DAO, Service/Façade, GRASP Controller; SRP, DIP, OCP in practice (see report).
+        - ** Patterns: ** DAO, Service/Façade, GRASP Controller; SRP, DIP, OCP in practice (see report).
 
-        - **Testing:** JUnit + Mockito; **Testcontainers** spins MySQL for RentalDAOIntegrationTest (Docker required).
+        - ** Testing: ** JUnit + Mockito; **Testcontainers** spins MySQL for RentalDAOIntegrationTest (Docker required).
 
-**Screens & diagrams**
+## Screens & diagrams
     - ERD / Class / Sequence / Collaboration diagrams → docs/figures/*.png
     - Manual tests: docs/figures/MT1..MT5 screenshots (registration, booking, overlap rejection, payment, notifications)    
 
-**Repo map**
+## Repo map
 ```bash
 src/
   main/java/com/vehiclerental/...
@@ -92,13 +92,14 @@ docs/
 pom.xml
 ```
 
-**Notes & roadmap**
-    - **Config:** consolidate DB config via DatabaseConnection (remove duplicate URL/user/pass in DAOs).
+## Notes & roadmap
 
-    - **Security:** move passwords to env or application.properties; hash user passwords.
+    - ** Config: ** consolidate DB config via DatabaseConnection (remove duplicate URL/user/pass in DAOs).
 
-    - **Packaging:** add maven-shade-plugin or exec-maven-plugin for one-command run.
+    - ** Security: ** move passwords to env or application.properties; hash user passwords.
 
-    - **Logging:** add slf4j + logback (replace System.out).
+    - ** Packaging: ** add maven-shade-plugin or exec-maven-plugin for one-command run.
 
-    - **CI:** add GitHub Actions “Maven” workflow; optionally enable services for Testcontainers.
+    - ** Logging: ** add slf4j + logback (replace System.out).
+
+    - ** CI: ** add GitHub Actions “Maven” workflow; optionally enable services for Testcontainers.
