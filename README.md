@@ -97,5 +97,9 @@ pom.xml
 - **Logging:** add slf4j + logback (replace System.out).
 - **CI:** add GitHub Actions “Maven” workflow; optionally enable services for Testcontainers.
 
-## License / Citation
+## License 
+MIT
+
+## Citation
+
 
