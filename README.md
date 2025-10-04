@@ -32,7 +32,9 @@ The Schema and seed mirror the app’s expectations (users, vehicles, rentals).
 **Configure credentials: By default the code uses jdbc:mysql://localhost:3306/vehiclerental and root:root.**
 
 Update either:
-  - src/main/java/com/vehiclerental/utils/DatabaseConnection.java, and the duplicated constants in src/main/java/com/vehiclerental/dao/UserDAO.java and .../VehicleDAO.java
+  
+  - **src/main/java/com/vehiclerental/utils/DatabaseConnection.java**,
+  - and the duplicated constants in **src/main/java/com/vehiclerental/dao/UserDAO.java** and **.../VehicleDAO.java**
 
 ### 2) Build & test
 ```bash
