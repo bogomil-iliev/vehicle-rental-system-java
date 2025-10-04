@@ -98,8 +98,8 @@ pom.xml
 - **CI:** add GitHub Actions “Maven” workflow; optionally enable services for Testcontainers.
 
 ## License 
-MIT
+**MIT**
 
 ## Citation
-
+[➡️ Cite this repository](./CITATION.cff)
 
